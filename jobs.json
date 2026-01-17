@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "TechNova",
+    "location": "Bangalore",
+    "jobType": "Full-time",
+    "experience": "Junior",
+    "experienceRequired": "0-2 years",
+    "description": "Develop and maintain responsive user interfaces using HTML, CSS, and JavaScript. Collaborate with designers and backend developers to deliver high-quality web experiences. Optimize applications for performance and accessibility."
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "company": "CodeSphere",
+    "location": "Hyderabad",
+    "jobType": "Full-time",
+    "experience": "Mid",
+    "experienceRequired": "2-4 years",
+    "description": "Design, develop, and maintain server-side applications and REST APIs. Work with databases, ensure security best practices, and collaborate closely with frontend teams to integrate APIs efficiently."
+  },
+  {
+    "id": 3,
+    "title": "Full Stack Developer",
+    "company": "Innovix",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Senior",
+    "experienceRequired": "5+ years",
+    "description": "Own end-to-end development of web applications, from frontend UI to backend services. Architect scalable solutions, review code, and mentor junior developers while ensuring best engineering practices."
+  },
+  {
+    "id": 4,
+    "title": "JavaScript Developer",
+    "company": "DevWorks",
+    "location": "Pune",
+    "jobType": "Full-time",
+    "experience": "Mid",
+    "experienceRequired": "3-5 years",
+    "description": "Write clean, maintainable, and efficient JavaScript code. Improve application performance, fix bugs, and work closely with product teams to implement new features."
+  },
+  {
+    "id": 5,
+    "title": "UI Developer",
+    "company": "PixelCraft",
+    "location": "Chennai",
+    "jobType": "Full-time",
+    "experience": "Junior",
+    "experienceRequired": "1-3 years",
+    "description": "Convert design mockups into pixel-perfect user interfaces. Ensure cross-browser compatibility and collaborate with UX designers to enhance visual consistency."
+  },
+  {
+    "id": 6,
+    "title": "Web Developer",
+    "company": "Webify",
+    "location": "Delhi",
+    "jobType": "Part-time",
+    "experience": "Junior",
+    "experienceRequired": "0-2 years",
+    "description": "Maintain existing websites, implement small feature updates, and fix UI bugs. Ideal role for developers looking to gain hands-on experience with real-world projects."
+  },
+  {
+    "id": 7,
+    "title": "Software Engineer",
+    "company": "NextGenSoft",
+    "location": "Mumbai",
+    "jobType": "Full-time",
+    "experience": "Mid",
+    "experienceRequired": "3-5 years",
+    "description": "Design and develop scalable software systems. Participate in code reviews, improve system reliability, and work closely with cross-functional teams."
+  },
+  {
+    "id": 8,
+    "title": "Frontend Engineer",
+    "company": "BrightTech",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Mid",
+    "experienceRequired": "2-4 years",
+    "description": "Implement modern frontend features using JavaScript. Focus on performance, reusability, and maintainability while working in an agile environment."
+  },
+  {
+    "id": 9,
+    "title": "Junior Web Developer",
+    "company": "StartHub",
+    "location": "Kolkata",
+    "jobType": "Full-time",
+    "experience": "Junior",
+    "experienceRequired": "0-1 years",
+    "description": "Assist senior developers in building and debugging web applications. Learn best practices, participate in code reviews, and grow technical skills."
+  },
+  {
+    "id": 10,
+    "title": "Senior Frontend Developer",
+    "company": "UIX Labs",
+    "location": "Bangalore",
+    "jobType": "Full-time",
+    "experience": "Senior",
+    "experienceRequired": "5-8 years",
+    "description": "Lead frontend architecture decisions, build complex UI components, and mentor junior developers. Ensure high performance and accessibility standards."
+  },
+  {
+    "id": 11,
+    "title": "React Developer",
+    "company": "AppVerse",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Mid",
+    "experienceRequired": "2-4 years",
+    "description": "Develop interactive and scalable user interfaces. Work closely with designers and backend teams to deliver seamless user experiences."
+  },
+  {
+    "id": 12,
+    "title": "Web Designer",
+    "company": "CreativeBits",
+    "location": "Jaipur",
+    "jobType": "Part-time",
+    "experience": "Junior",
+    "experienceRequired": "1-2 years",
+    "description": "Design visually appealing layouts and improve overall website aesthetics. Collaborate with developers to ensure design feasibility."
+  },
+  {
+    "id": 13,
+    "title": "Frontend Intern",
+    "company": "LearnTech",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Fresher",
+    "experienceRequired": "0 years",
+    "description": "Learn frontend development by working on real projects. Assist in building UI components and fixing minor issues under mentorship."
+  },
+  {
+    "id": 14,
+    "title": "Software Developer",
+    "company": "AlgoWorks",
+    "location": "Noida",
+    "jobType": "Full-time",
+    "experience": "Mid",
+    "experienceRequired": "3-5 years",
+    "description": "Implement business logic and application features. Collaborate with QA and product teams to ensure smooth delivery."
+  },
+  {
+    "id": 15,
+    "title": "UI Engineer",
+    "company": "Designify",
+    "location": "Mumbai",
+    "jobType": "Full-time",
+    "experience": "Senior",
+    "experienceRequired": "6+ years",
+    "description": "Build scalable and accessible UI systems. Define UI standards and improve consistency across products."
+  },
+  {
+    "id": 16,
+    "title": "JavaScript Engineer",
+    "company": "ScriptLabs",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Senior",
+    "experienceRequired": "5+ years",
+    "description": "Optimize JavaScript performance across applications. Lead technical decisions and ensure code quality."
+  },
+  {
+    "id": 17,
+    "title": "Frontend Tester",
+    "company": "QualitySoft",
+    "location": "Bangalore",
+    "jobType": "Full-time",
+    "experience": "Junior",
+    "experienceRequired": "1-2 years",
+    "description": "Test UI components, identify bugs, and ensure consistent behavior across browsers and devices."
+  },
+  {
+    "id": 18,
+    "title": "Product Engineer",
+    "company": "BuildRight",
+    "location": "Pune",
+    "jobType": "Full-time",
+    "experience": "Mid",
+    "experienceRequired": "3-5 years",
+    "description": "Work closely with product managers to build features that solve real user problems. Focus on performance and scalability."
+  },
+  {
+    "id": 19,
+    "title": "Web Application Developer",
+    "company": "CloudCore",
+    "location": "Remote",
+    "jobType": "Remote",
+    "experience": "Mid",
+    "experienceRequired": "2-4 years",
+    "description": "Develop and maintain modern web applications. Ensure security, performance, and cross-platform compatibility."
+  },
+  {
+    "id": 20,
+    "title": "UI/UX Developer",
+    "company": "HumanizeTech",
+    "location": "Ahmedabad",
+    "jobType": "Full-time",
+    "experience": "Junior",
+    "experienceRequired": "1-3 years",
+    "description": "Improve user experience through thoughtful UI development. Conduct usability improvements and collaborate with design teams."
+  }
+]
