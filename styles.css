@@ -10,7 +10,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* overflow-y: auto; */
 }
 
 .navigation-bar-search {
@@ -23,8 +22,6 @@ body {
 }
 
 .job-protal-main {
-    /* margin-top: 70px; */
-    /* same as navbar height */
     background-color: #f3eeee;
     overflow-y: auto;
     max-height: 100vh;

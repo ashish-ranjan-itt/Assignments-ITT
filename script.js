@@ -1,3 +1,5 @@
+// all selected elements
+
 const jobListing = document.querySelector(".job-portal-job-listings")
 const jobDetailModal = document.querySelector(".job-portal-job-detail-modal")
 const searchElement = document.querySelector(".navigation-bar-search")
@@ -9,10 +11,12 @@ const filterTypeLocation = document.getElementById("filterType2")
 const filterTypeExperience = document.getElementById("filterType3")
 const addFiltersBtn = document.querySelector(".filter-add-button")
 
-// console.log(filterOptions[0].innerHTML)
+//global variables
 
 let jobs = []
 let searchQuery = ""
+
+//custom function
 
 const trimAndAppendString = function (name) {
     if (name.length > 50) {
@@ -20,6 +24,8 @@ const trimAndAppendString = function (name) {
     }
     return name
 }
+
+// filter section
 
 const filterJobsByLocation = () => {
     if (filterTypeLocation.value === "") {
@@ -51,6 +57,12 @@ const combineAllFilters = (locationFilteredJobs, jobTypeFilteredJobs, experience
     );
 }
 
+const clearFilters = () => {
+  filterTypeJobType.selectedIndex = 0;
+  filterTypeLocation.selectedIndex = 0;
+  filterTypeExperience.selectedIndex = 0;
+}
+
 const applyFilterToJobs = () => {
     const locationFilteredJobs = filterJobsByLocation()
     const jobTypeFilteredJobs = filterJobsByJobType()
@@ -59,6 +71,8 @@ const applyFilterToJobs = () => {
     console.log(combinedFilters)
     return combinedFilters
 }
+
+// job details modal section
 
 const openModal = (job) => {
     jobDetailModal.classList.remove("hidden")
@@ -99,6 +113,8 @@ const openModal = (job) => {
     })
 }
 
+// search section
+
 filteredData = () => {
     const query = searchQuery.toLowerCase()
     const applyFilter = jobs.filter((job) => {
@@ -109,12 +125,6 @@ filteredData = () => {
     })
     // console.log(applyFilter)
     return applyFilter
-}
-
-const clearFilters = () => {
-  filterTypeJobType.selectedIndex = 0;
-  filterTypeLocation.selectedIndex = 0;
-  filterTypeExperience.selectedIndex = 0;
 }
 
 const renderSearchedJobs = (jobs) => {
@@ -151,6 +161,15 @@ const renderSearchedJobs = (jobs) => {
     })
 }
 
+searchElement.addEventListener("input", (e) => {
+    searchQuery = e.target.value
+    // console.log(searchQuery)
+    const filteredJobs = filteredData()
+    renderSearchedJobs(filteredJobs)
+})
+
+// inital job fetch
+
 fetch('jobs.json').then((res) => {
     console.log(res)
     return res.json()
@@ -185,12 +204,7 @@ fetch('jobs.json').then((res) => {
     })
 }).catch((err) => console.log(err))
 
-searchElement.addEventListener("input", (e) => {
-    searchQuery = e.target.value
-    // console.log(searchQuery)
-    const filteredJobs = filteredData()
-    renderSearchedJobs(filteredJobs)
-})
+// filters event listeners
 
 filterButton.addEventListener("click", () => {
     filterModal.classList.remove("hideFilters")
@@ -208,23 +222,13 @@ addFiltersBtn.addEventListener("click", () => {
     renderSearchedJobs(filteredJobs)
 })
 
-// filterTypeJobType.addEventListener("change", (e) => {
-//   console.log("Selected job type:", e.target.value);
-// });
-
-// filterTypeExperience.addEventListener("change", (e) => {
-//   console.log("Selected job type:", e.target.value);
-// });
-
-// filterTypeLocation.addEventListener("change", (e) => {
-//   console.log("Selected job type:", e.target.value);
-// });
-
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !filterModal.classList.contains("hideFilters")) {
         filterModal.classList.add("hideFilters")
     }
 })
+
+// details modal event listeners
 
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !jobDetailModal.classList.contains("hidden")) {
