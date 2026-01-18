@@ -11,9 +11,6 @@
 
 <body>
     <div class="job-portal-main-page">
-        <!-- <div class="job-portal-navigation">
-            <h1 class="navigation-bar-heading">Job Portal Application</h1>
-        </div> -->
         <div class="job-protal-main">
             <div class="job-portal-guide">
                 <div class="job-portal-slogan">
@@ -45,6 +42,53 @@
                                 stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
+                    <div class="job-filter-modal hideFilters">
+                        <div class="job-filter-modal-overlay"></div>
+                        <div class="job-filter-modal-content">
+                            <div class="job-filter-modal-heading">Apply Filters
+                                <div class="job-filter-modal-close-btn">&times;</div>
+                            </div>
+                            <div class="job-filter-modal-description">Apply filters to see desired results, filters can
+                                be of <br />job type, location and experience</div>
+                            <div class="job-filter-modal-options">
+                                <select class="job-filter-modal-options-select" id="filterType1">
+                                    <option value="">--Choose Job Type--</option>
+                                    <option value="Part-time">Part Time</option>
+                                    <option value="Full-time">Full Time</option>
+                                    <option value="Remote">Remote</option>
+                                </select>
+                                <select class="job-filter-modal-options-select" id="filterType2">
+                                    <option value="">--Choose Location--</option>
+                                    <option value="Remote">Remote</option>
+                                    <option value="Bangalore">Bangalore</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Jaipur">Jaipur</option>
+                                    <option value="Noida">Noida</option>
+                                    <option value="Chennai">Chennai</option>
+                                </select>
+                                <select class="job-filter-modal-options-select" id="filterType3">
+                                    <option value="">--Choose Experience--</option>
+                                    <option value="02">0-2</option>
+                                    <option value="25">2-5</option>
+                                    <option value="58">5-8</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div class="filter-add-button"> Add Filters
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="15px" height="150px"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -77,25 +121,6 @@
             <div class="job-detail-modal-overlay"></div>
             <div class="job-detai-modal-content">
                 <div class="job-detail-modal-close-btn">&times;</div>
-                <div class="job-detail-modal-title">Job Application Portal</div>
-                <div class="job-detail-modal-job-title">Frontend Developer</div>
-                <div class="job-detail-modal-job-location">Bangalore</div>
-                <div class="job-detail-modal-job-description">Develop and maintain responsive user interfaces using
-                    HTML, CSS, and JavaScript. Collaborate with designers and backend developers to deliver high-quality
-                    web experiences. Optimize applications for performance and accessibility.</div>
-                <div class="job-detail-modal-job-apply"><button class="job-detail-modal-job-apply-button"> Apply
-                        Now</button></div>
-                <div class="job-detail-modal-specs">
-                    <div class="job-detail-modal-specs-container">
-                        <div class="job-detail-modal-experience"></div>
-                    </div>
-                    <div class="job-detail-modal-specs-container">
-                        <div class="job-detail-modal-jobType"></div>
-                    </div>
-                    <div class="job-detail-modal-specs-container">
-                        <div class="job-detail-modal-experienceRequired"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

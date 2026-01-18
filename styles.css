@@ -252,6 +252,7 @@ body {
     border-radius: 22px;
     border: none;
     cursor: pointer;
+    background-color: rgb(194, 221, 194) ;
 }
 
 .job-detail-modal-specs {
@@ -263,7 +264,115 @@ body {
 
 .job-detail-modal-specs-container {
     border-radius: 16px;
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 280px;
     background-color: #F0F0F0;
+    padding: 12px;
+    margin-top: 10px;
 }
+
+.job-detail-spcs-img {
+    width: 100px;
+    height: 100px;
+}
+
+.job-detail-modal-specs-attribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Satoshi;
+    font-weight: 500;
+}
+
+.job-filter-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.job-filter-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.job-filter-modal-content {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+}
+
+.job-filter-modal-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Satoshi;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.hideFilters {
+    display: none;
+}
+
+.job-filter-modal-close-btn {   
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.job-filter-modal-description {
+    font-family: Satoshi;
+    color: rgb(141, 136, 136);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.job-filter-modal-options {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-filter-modal-options-select {
+    height: 40px;
+    border-radius: 9px;
+    font-family: Satoshi;
+    font-weight: 500;
+}
+
+.filter-add-button {
+    font-family: Satoshi;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 6px 12px;
+    border-radius: 9px;
+    background-color: #312929;
+    color: white;
+    font-size: 13px;
+    height: 24px;
+    gap: 10px;
+    width: 87px;
+    margin-left: auto;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.icon {
+  color: white;
+}   
