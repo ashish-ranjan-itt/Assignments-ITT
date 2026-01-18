@@ -68,7 +68,6 @@ const applyFilterToJobs = () => {
     const jobTypeFilteredJobs = filterJobsByJobType()
     const experienceFilteredJobs = filterJobsByExperience()
     const combinedFilters = combineAllFilters(locationFilteredJobs, jobTypeFilteredJobs, experienceFilteredJobs)
-    console.log(combinedFilters)
     return combinedFilters
 }
 
@@ -123,7 +122,6 @@ filteredData = () => {
             job.company.toLowerCase().includes(query) ||
             job.jobType?.toLowerCase().includes(query)
     })
-    // console.log(applyFilter)
     return applyFilter
 }
 
@@ -155,7 +153,6 @@ const renderSearchedJobs = (jobs) => {
 `
         const button = jobCard.querySelector(".job-view-button")
         button.addEventListener("click", () => {
-            console.log(job)
             openModal(job)
         })
     })
@@ -163,7 +160,6 @@ const renderSearchedJobs = (jobs) => {
 
 searchElement.addEventListener("input", (e) => {
     searchQuery = e.target.value
-    // console.log(searchQuery)
     const filteredJobs = filteredData()
     renderSearchedJobs(filteredJobs)
 })
@@ -171,11 +167,9 @@ searchElement.addEventListener("input", (e) => {
 // inital job fetch
 
 fetch('jobs.json').then((res) => {
-    console.log(res)
     return res.json()
 }
 ).then((data) => {
-    console.log(data)
     jobs = data
     data.map((job, index) => {
         const jobCard = document.createElement("div")
@@ -198,7 +192,6 @@ fetch('jobs.json').then((res) => {
 `
         const button = jobCard.querySelector(".job-view-button")
         button.addEventListener("click", () => {
-            console.log(job)
             openModal(job)
         })
     })
@@ -215,7 +208,6 @@ closeFilterBtn.addEventListener("click", () => {
 })
 
 addFiltersBtn.addEventListener("click", () => {
-    // console.log(filterTypeJobType.value,filterTypeExperience.value,filterTypeLocation.value)
     const filteredJobs = applyFilterToJobs()
     filterModal.classList.add("hideFilters")
     clearFilters();
